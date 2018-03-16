@@ -15,6 +15,11 @@
           <td> <%= comedian.name %></a></td>
           <td> <%= comedian.age %></td>
         </tr>
+        <tr>
+          <% specials.find_all { |special| special.comedian_id == comedian.id}.each do |special| %>
+            <td><%= special.name %></td>
+          <% end %>
+        </tr>
 
       <% end %>
     </table>
