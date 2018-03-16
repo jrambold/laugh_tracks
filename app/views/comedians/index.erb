@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <h1>Comedians</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+
+      <% comedians.each do |comedian| %>
+
+        <tr>
+          <td> <%= comedian.name %></a></td>
+          <td> <%= comedian.age %></td>
+        </tr>
+
+      <% end %>
+    </table>
+  </body>
+</html>
